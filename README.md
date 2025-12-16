@@ -1,58 +1,44 @@
-# Hi, I'm Svetlana 👋  
-**AI Developer · Python Backend Engineer**
+# Hi, I'm Svetlana Sidorenko
+AI Developer · Python Backend Engineer
 
-I design and build AI assistants, Telegram bots, backend APIs, automation tools and integrations using modern Python and LLM technologies.
+I build backend services and AI-powered automation: Telegram bots, API integrations, and LLM-based assistants.
 
----
+## Tech Stack
 
-## ⚡ Tech Stack
+- Python, FastAPI, AsyncIO
+- SQLAlchemy, Pydantic
+- PostgreSQL, SQLite
+- Docker, GitHub Actions
+- Telegram Bot API, Telegram WebApps
+- Google APIs (Sheets/Drive), Webhooks, CRM integrations
+- LLM APIs (OpenAI / OpenRouter), RAG, prompt engineering
+- Automation & scraping: Selenium, undetected-chromedriver
 
-**Backend & Core:**  
-Python · FastAPI · AsyncIO · SQLAlchemy · Pydantic · Docker
+## Featured Projects
 
-**AI & LLM:**  
-GPT-4o · OpenRouter · RAG · Prompt Engineering
+### AI24Solutions — AI Assistant & Automations
+Backend + integrations for AI assistants and business workflows.
+Stack: Python, FastAPI, PostgreSQL, LLM APIs, Google APIs  
+Repo: <private>
 
-**Databases:**  
-PostgreSQL · SQLite · Prisma ORM
+### Dental AI Assistant
+Telegram assistant for patient intake and booking workflows (classification, routing, lead capture).
+Stack: Python, Telegram Bot API, Google Sheets API, LLM APIs  
+Repo: <private>
 
-**Automation:**  
-Selenium · undetected-chromedriver · Web Scraping · API Integrations
+### AstroConnect — Telegram Mini App + API
+Profiles + matching features with backend API and DB.
+Stack: FastAPI, aiogram, PostgreSQL  
+Repo: <private>
 
-**Bots & Integrations:**  
-Telegram Bot API · WebApps · Google Sheets API · CRM · Payment APIs
+### Stock Keyword Automation Tool
+Automation tool for processing content and generating metadata with OCR + AI.
+Stack: Python, Selenium, OCR, LLM APIs  
+Repo: <private>
 
-**DevOps:**  
-Railway · Render · GitHub Actions · Docker
+## Contacts
 
----
-
-## 🚀 Featured Projects
-
-### **AI24Solutions — GPT Assistant & Automation Bot**  
-AI engine that answers questions, performs tasks, automates workflows and integrates with external APIs.  
-**Stack:** Python, FastAPI, GPT-4o, PostgreSQL, Google API
-
-### **Dental AI Assistant**  
-AI assistant for dental clinics: booking, classification, patient intake.  
-**Stack:** Python, GPT, Google Sheets, Telegram API
-
-### **AstroConnect WebApp**  
-Telegram Mini App + backend for matching profiles using astrology charts.  
-**Stack:** FastAPI, Aiogram, PostgreSQL
-
-### **Stock Keyworder**  
-Automation robot for generating stock keywords using OCR + AI.  
-**Stack:** Python, Selenium, OCR, automation
-
-### **AI24Garden Backend**  
-Backend API for e-commerce automation & AI modules.  
-**Stack:** FastAPI, integrations, Python
-
----
-
-## 📫 Contacts
-
-**Telegram:** @sidarenkas  
-**Email:** ssidaren@gmail.com  
-**Website:** https://ai24solutions.ru  
+Telegram: https://t.me/sidarenkas  
+Email: ssidaren@gmail.com  
+Website: https://ai24solutions.ru  
+LinkedIn: https://www.linkedin.com/in/sviatanasidarenka/
