@@ -1,4 +1,4 @@
-# Hi, I'm Svetlana Sidorenko
+# Svetlana Sidorenko
 AI Developer · Python Backend Engineer
 
 I build backend services and AI-powered automation: Telegram bots, API integrations, and LLM-based assistants.
