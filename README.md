@@ -1,44 +1,141 @@
-# Svetlana Sidorenko
-AI Developer · Python Backend Engineer
+# Svetlana Sidorenko  
+**AI Engineer · Python Backend Engineer**
 
-I build backend services and AI-powered automation: Telegram bots, API integrations, and LLM-based assistants.
+I design and build backend services for **AI and voice assistants**.  
+My work focuses on **API orchestration, request processing, integrations**, and backend logic that connects voice pipelines, AI models, and external systems into **reliable production services**.
+
+---
 
 ## Tech Stack
 
-- Python, FastAPI, AsyncIO
-- SQLAlchemy, Pydantic
-- PostgreSQL, SQLite
-- Docker, GitHub Actions
-- Telegram Bot API, Telegram WebApps
-- Google APIs (Sheets/Drive), Webhooks, CRM integrations
-- LLM APIs (OpenAI / OpenRouter), RAG, prompt engineering
-- Automation & scraping: Selenium, undetected-chromedriver
+**Backend**  
+- Python  
+- FastAPI  
+- AsyncIO  
+
+**Data & Validation**  
+- SQLAlchemy  
+- Pydantic  
+
+**Databases**  
+- PostgreSQL  
+- SQLite  
+
+**Infrastructure**  
+- Docker  
+- GitHub Actions  
+
+**APIs & Integrations**  
+- Telegram Bot API  
+- Telegram WebApps  
+- Google APIs (Sheets, Drive)  
+- Webhooks  
+- CRM systems  
+
+**Automation**  
+- Selenium  
+- undetected-chromedriver  
+
+---
 
 ## Featured Projects
 
-### AI24Solutions — AI Assistant & Automations
-Backend + integrations for AI assistants and business workflows.
-Stack: Python, FastAPI, PostgreSQL, LLM APIs, Google APIs  
-Repo: <private>
+### AI24Solutions Bot — @ai24solutionsBot
+Production Telegram assistant used for consultations and lead handling.
 
-### Dental AI Assistant
-Telegram assistant for patient intake and booking workflows (classification, routing, lead capture).
-Stack: Python, Telegram Bot API, Google Sheets API, LLM APIs  
-Repo: <private>
+**Responsibilities**
+- Backend logic for request handling and routing  
+- API integrations with external services and forms  
+- Data validation and persistence  
+- Ensuring stable behavior under real user load  
 
-### AstroConnect — Telegram Mini App + API
-Profiles + matching features with backend API and DB.
-Stack: FastAPI, aiogram, PostgreSQL  
-Repo: <private>
+**Stack:** Python, FastAPI, Telegram Bot API  
+**Repository:** Private  
 
-### Stock Keyword Automation Tool
-Automation tool for processing content and generating metadata with OCR + AI.
-Stack: Python, Selenium, OCR, LLM APIs  
-Repo: <private>
+---
+
+### Voice AI Assistant for Website
+Backend service for a voice-based assistant integrated into a website.
+
+**Responsibilities**
+- Backend orchestration of voice request flows  
+- Integration of speech-to-text and text-to-speech services  
+- Request routing and response handling  
+- Focus on latency, reliability, and predictable behavior  
+
+**Stack:** Python, FastAPI, STT / TTS APIs  
+**Repository:** Private (NDA)  
+
+---
+
+### Backend Platform for AI Assistants & Automations (NDA)
+Backend services supporting AI assistants and internal automation workflows.
+
+**Responsibilities**
+- API design and backend architecture  
+- Data modeling and persistence  
+- Integration with Google APIs, CRM systems, and webhooks  
+- Clean separation between logic, integrations, and storage  
+
+**Stack:** Python, FastAPI, PostgreSQL, Docker  
+**Repository:** Private (NDA)  
+
+---
+
+### Crypto Arbitrage Telegram Bot
+Telegram bot for monitoring arbitrage opportunities using public exchange data.
+
+**Responsibilities**
+- Backend logic for market data collection  
+- Arbitrage calculations with fees and thresholds  
+- Alerting and reporting via Telegram  
+- Focus on correctness and fault tolerance  
+
+**Stack:** Python, Telegram Bot API, public exchange APIs  
+**Repository:** Private  
+
+---
+
+### Dental Assistant Backend (NDA)
+Backend for a Telegram-based assistant used in dental clinics.
+
+**Responsibilities**
+- Conversation flow logic and routing  
+- Backend integrations with Google Sheets  
+- Data storage and processing  
+- Supporting booking and lead capture workflows  
+
+**Stack:** Python, Telegram Bot API, Google Sheets API  
+**Repository:** Private (NDA)  
+
+---
+
+### AstroConnect — Backend API for Telegram Mini App
+Backend API for a Telegram mini application with user profiles and matching logic.
+
+**Responsibilities**
+- Backend API design  
+- Database schema design  
+- Profile storage and matching logic  
+- Integration with Telegram Mini App  
+
+**Stack:** FastAPI, aiogram, PostgreSQL  
+**Repository:** Private (NDA)  
+
+---
+
+## How I Work
+
+- Focus on backend architecture and clear request flows  
+- Design systems with predictable behavior and maintainability  
+- Work comfortably with APIs, integrations, and asynchronous processing  
+- Deliver backend services ready for real production use  
+
+---
 
 ## Contacts
 
-Telegram: https://t.me/sidarenkas  
-Email: ssidaren@gmail.com  
-Website: https://ai24solutions.ru  
-LinkedIn: https://www.linkedin.com/in/sviatanasidarenka/
+- **Telegram:** https://t.me/sidarenkas  
+- **Email:** ssidaren@gmail.com  
+- **Website:** https://ai24solutions.ru  
+- **LinkedIn:** https://www.linkedin.com/in/sviatanasidarenka/
