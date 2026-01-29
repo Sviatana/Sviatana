@@ -1,5 +1,5 @@
 # Svetlana Sidorenko  
-**AI Engineer · Python Backend Engineer (Conversational & Voice Assistants)**
+**AI Engineer · Python Backend Engineer**
 
 I design and build backend services for **AI and voice assistants**.  
 My work focuses on **API orchestration, request processing, integrations**, and backend logic that connects voice pipelines, AI models, and external systems into **reliable production services**.
