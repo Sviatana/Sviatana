@@ -1,175 +1,142 @@
-# Svetlana Sidorenko  
-**AI Engineer · Python Backend Engineer**
+# Svetlana Sidorenko
 
-I design and build backend services for **AI and voice assistants**.  
-My work focuses on **API orchestration, request processing, integrations**, and backend logic that connects voice pipelines, AI models, and external systems into **reliable production services**.
+**AI Engineer · Python Backend Engineer · LLM Applications**
 
-I take ownership of backend architecture, system stability, and production readiness, including deployment, monitoring, and long-term maintainability.
+I build production-oriented AI applications and Python backend systems. My current focus is on LLM integrations, retrieval-augmented generation, structured AI outputs, API orchestration, validation, and reliable backend architecture.
+
+I work across the full delivery cycle: requirements, architecture, implementation, testing, production debugging, Docker-based release preparation, and ongoing improvement.
 
 ---
 
-## Tech Stack
+## Core Stack
 
-**Backend**
-- Python  
-- FastAPI  
-- AsyncIO  
+### Backend
 
-**Data & Validation**
-- SQLAlchemy  
-- Pydantic  
+- Python 3.12
+- FastAPI
+- AsyncIO
+- REST APIs
+- Pydantic 2
+- SQLAlchemy 2
+- Alembic
 
-**Databases**
-- PostgreSQL  
-- SQLite  
+### AI / LLM
 
-**Infrastructure**
-- Docker  
-- Railway  
-- GitHub Actions (CI/CD)  
+- OpenAI-compatible APIs
+- RAG pipelines
+- Embeddings
+- Semantic and vector search
+- Structured outputs
+- Context assembly
+- Validation, retry, repair, and fallback flows
 
-**APIs & Integrations**
-- Telegram Bot API  
-- Telegram WebApps  
-- Google APIs (Sheets, Drive)  
-- Webhooks  
-- CRM systems  
+### Data
 
-**Automation**
-- Selenium  
-- undetected-chromedriver  
+- PostgreSQL
+- pgvector
+- SQLite
+- Redis
+
+### Infrastructure
+
+- Docker
+- Docker Compose
+- Git and GitHub
+- Linux
+- Railway
+- GitHub Actions
 
 ---
 
 ## Featured Projects
 
-### AI24Solutions Bot — @ai24solutionsBot
-Production Telegram assistant used for consultations and lead handling.
+### Stock Keyworder
 
-**Responsibilities**
-- Backend logic for request handling and routing  
-- API integrations with external services and forms  
-- Data validation and persistence  
-- Ensuring stable behavior under real user load  
-- Ownership of production deployment and reliability  
+AI-assisted metadata generation for stock photography.
 
-**Production**
-- Deployed to cloud infrastructure  
-- CI/CD pipeline in place  
-- Health checks and monitoring enabled  
+The service accepts uploaded images, normalizes them, sends them to a vision-capable OpenAI model, validates structured metadata, stores results, supports batch processing, editing, history, and CSV export.
 
-**Stack:** Python, FastAPI, Telegram Bot API  
-**Repository:** Private  
+**Highlights**
 
----
+- Fully async FastAPI and SQLAlchemy 2 backend
+- PostgreSQL in production and SQLite locally
+- Pydantic validation for AI responses
+- Bounded retries with exponential backoff and jitter
+- Google OAuth
+- Alembic migrations
+- Batch workflow and secure user-scoped access
 
-### Voice AI Assistant for Website
-Backend service for a voice-based assistant integrated into a website.
+**Stack:** Python 3.12, FastAPI, SQLAlchemy 2, PostgreSQL, Pydantic 2, httpx, OpenAI API, Alembic, Docker
 
-**Responsibilities**
-- Backend orchestration of voice request flows  
-- Integration of speech-to-text and text-to-speech services  
-- Request routing and response handling  
-- Focus on latency, reliability, and predictable behavior  
-
-**Production**
-- Production backend service behind public website  
-- Emphasis on low-latency responses and fault tolerance  
-
-**Stack:** Python, FastAPI, STT / TTS APIs  
-**Repository:** Private (NDA)  
+**Repository:** [github.com/Sviatana/stock-keyworder](https://github.com/Sviatana/stock-keyworder)
 
 ---
 
-### Backend Platform for AI Assistants & Automations (NDA)
-Backend services supporting AI assistants and internal automation workflows.
+### ContextFlow
 
-**Responsibilities**
-- API design and backend architecture  
-- Data modeling and persistence  
-- Integration with Google APIs, CRM systems, and webhooks  
-- Clean separation between business logic, integrations, and storage  
+Backend service demonstrating a controlled retrieval-augmented generation pipeline.
 
-**Production**
-- Cloud deployment with Docker  
-- CI/CD via GitHub Actions  
-- Long-running production workloads  
+The service accepts a user question, retrieves relevant context from an in-memory knowledge base using embeddings and cosine similarity, sends the selected context to an OpenAI-compatible model, validates the answer, and returns structured JSON.
 
-**Stack:** Python, FastAPI, PostgreSQL, Docker  
-**Repository:** Private (NDA)  
+**Highlights**
 
----
+- Clear separation of retrieval, generation, and validation
+- Embeddings-based semantic search
+- Controlled prompt construction
+- Response validation before returning output
+- Simple, maintainable FastAPI architecture
 
-### Crypto Arbitrage Telegram Bot
-Telegram bot for monitoring arbitrage opportunities using public exchange data.
+**Stack:** Python, FastAPI, Pydantic, OpenAI-compatible API, embeddings, cosine similarity
 
-**Responsibilities**
-- Backend logic for market data collection  
-- Arbitrage calculations with fees and thresholds  
-- Alerting and reporting via Telegram  
-- Focus on correctness and fault tolerance  
-
-**Production**
-- Continuous background execution  
-- Real-time data processing  
-- Fail-safe behavior under unstable APIs  
-
-**Stack:** Python, Telegram Bot API, public exchange APIs  
-**Repository:** Private  
+**Repository:** [github.com/Sviatana/ContextFlow](https://github.com/Sviatana/ContextFlow)
 
 ---
 
-### Dental Assistant Backend (NDA)
-Backend for a Telegram-based assistant used in dental clinics.
+### Anima
 
-**Responsibilities**
-- Conversation flow logic and routing  
-- Backend integrations with Google Sheets  
-- Data storage and processing  
-- Supporting booking and lead capture workflows  
+Production-style FastAPI backend template for API-driven services, AI assistants, and voice-enabled systems.
 
-**Production**
-- Used by real clinics  
-- Stable daily operation  
-- Handling real user data flows  
+The repository demonstrates modular backend architecture, asynchronous request handling, PostgreSQL integration, environment-based configuration, CI, and deployment-ready setup.
 
-**Stack:** Python, Telegram Bot API, Google Sheets API  
-**Repository:** Private (NDA)  
+**Highlights**
+
+- Separation of API, core logic, and database layers
+- Async request handling
+- PostgreSQL schema and migration structure
+- Docker and Railway deployment setup
+- GitHub Actions CI
+
+**Stack:** Python, FastAPI, AsyncIO, PostgreSQL, SQLAlchemy, Docker, Railway, GitHub Actions
+
+**Repository:** [github.com/Sviatana/anima](https://github.com/Sviatana/anima)
 
 ---
 
-### AstroConnect — Backend API for Telegram Mini App
-Backend API for a Telegram mini application with user profiles and matching logic.
+## Additional Experience
 
-**Responsibilities**
-- Backend API design  
-- Database schema design  
-- Profile storage and matching logic  
-- Integration with Telegram Mini App  
-
-**Production**
-- Cloud deployment  
-- PostgreSQL-backed persistence  
-- API consumed by Telegram Mini App frontend  
-
-**Stack:** FastAPI, aiogram, PostgreSQL  
-**Repository:** Private (NDA)  
+- AI assistants and business automation
+- Telegram products and Mini Apps
+- External API integrations
+- Background processing
+- File parsing and data validation
+- Production logs and root-cause debugging
+- Browser automation with Selenium and undetected-chromedriver
 
 ---
 
 ## How I Work
 
-- Focus on backend architecture and clear request flows  
-- Design systems with predictable behavior and maintainability  
-- Work comfortably with APIs, integrations, and asynchronous processing  
-- Take responsibility for deployment, stability, and production readiness  
-- Deliver backend services ready for real-world usage  
+- Design systems with clear component boundaries
+- Keep AI outputs controlled and validated
+- Prefer root-cause analysis over one-off fixes
+- Treat deployment and maintainability as part of development
+- Use AI-assisted development tools while retaining responsibility for architecture, review, testing, and final code quality
 
 ---
 
 ## Contacts
 
-- **Telegram:** https://t.me/sidarenkas  
-- **Email:** ssidaren@gmail.com  
-- **Website:** https://ai24solutions.ru  
-- **LinkedIn:** https://www.linkedin.com/in/sviatanasidarenka/
+- **Email:** ssidaren@gmail.com
+- **Website:** [ai24solutions.ru](https://ai24solutions.ru)
+- **LinkedIn:** [linkedin.com/in/sviatanasidarenka](https://www.linkedin.com/in/sviatanasidarenka/)
+- **Telegram:** [t.me/sidarenkas](https://t.me/sidarenkas)
