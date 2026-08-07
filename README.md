@@ -2,15 +2,17 @@
 
 **AI Engineer · Python Backend Engineer · LLM Applications**
 
-I build production-oriented AI applications and Python backend systems. My current focus is on LLM integrations, retrieval-augmented generation, structured AI outputs, API orchestration, validation, and reliable backend architecture.
+I design and build AI-powered applications and production backend systems with Python.
 
-I work across the full delivery cycle: requirements, architecture, implementation, testing, production debugging, Docker-based release preparation, and ongoing improvement.
+My current work focuses on LLM integrations, RAG, embeddings and vector retrieval, structured AI outputs, backend APIs, asynchronous processing, external service integrations, and reliable production architecture.
+
+I work across the full product delivery cycle: requirements analysis, architecture, backend implementation, AI integration, testing, production debugging, deployment, and ongoing improvement.
 
 ---
 
 ## Core Stack
 
-### Backend
+### Python / Backend
 
 - Python 3.12
 - FastAPI
@@ -19,32 +21,50 @@ I work across the full delivery cycle: requirements, architecture, implementatio
 - Pydantic 2
 - SQLAlchemy 2
 - Alembic
+- Background processing
 
 ### AI / LLM
 
-- OpenAI-compatible APIs
+- OpenAI API and OpenAI-compatible APIs
+- LLM integrations
 - RAG pipelines
 - Embeddings
-- Semantic and vector search
+- Semantic search
+- Vector search
 - Structured outputs
-- Context assembly
-- Validation, retry, repair, and fallback flows
+- Context assembly and management
+- Prompt and response validation
+- Retry, repair, and fallback flows
+- AI workflow orchestration
 
-### Data
+### Data & Retrieval
 
 - PostgreSQL
 - pgvector
-- SQLite
 - Redis
+- SQLite
+- Vector retrieval
+- Similarity search
+
+### Integrations
+
+- External REST APIs
+- Telegram Bot API / aiogram
+- Google APIs
+- OAuth
+- Webhooks
+- CRM and business-service integrations
 
 ### Infrastructure
 
 - Docker
 - Docker Compose
-- Git and GitHub
 - Linux
-- Railway
+- Git / GitHub
 - GitHub Actions
+- Railway
+- Environment-based configuration
+- Application logging and health checks
 
 ---
 
@@ -52,21 +72,28 @@ I work across the full delivery cycle: requirements, architecture, implementatio
 
 ### Stock Keyworder
 
-AI-assisted metadata generation for stock photography.
+AI-assisted metadata generation service for stock photography.
 
-The service accepts uploaded images, normalizes them, sends them to a vision-capable OpenAI model, validates structured metadata, stores results, supports batch processing, editing, history, and CSV export.
+The application processes uploaded images through a vision-capable LLM and generates structured metadata including titles, descriptions, and keywords.
 
-**Highlights**
+The backend controls the complete processing flow from upload and image normalization to AI generation, validation, persistence, editing, history, and CSV export.
 
-- Fully async FastAPI and SQLAlchemy 2 backend
-- PostgreSQL in production and SQLite locally
-- Pydantic validation for AI responses
+**Engineering highlights**
+
+- Fully asynchronous FastAPI backend
+- Async SQLAlchemy 2 persistence layer
+- PostgreSQL production database
+- Pydantic validation of structured AI responses
+- OpenAI Vision integration
+- Shared asynchronous HTTP client
 - Bounded retries with exponential backoff and jitter
-- Google OAuth
-- Alembic migrations
-- Batch workflow and secure user-scoped access
+- Alembic database migrations
+- Google OAuth authentication
+- Batch processing
+- User-scoped data access
+- AI output validation before persistence
 
-**Stack:** Python 3.12, FastAPI, SQLAlchemy 2, PostgreSQL, Pydantic 2, httpx, OpenAI API, Alembic, Docker
+**Stack:** Python 3.12, FastAPI, AsyncIO, SQLAlchemy 2, PostgreSQL, Pydantic 2, httpx, OpenAI API, Alembic, OAuth
 
 **Repository:** [github.com/Sviatana/stock-keyworder](https://github.com/Sviatana/stock-keyworder)
 
@@ -74,19 +101,25 @@ The service accepts uploaded images, normalizes them, sends them to a vision-cap
 
 ### ContextFlow
 
-Backend service demonstrating a controlled retrieval-augmented generation pipeline.
+RAG backend service built with FastAPI and an OpenAI-compatible API.
 
-The service accepts a user question, retrieves relevant context from an in-memory knowledge base using embeddings and cosine similarity, sends the selected context to an OpenAI-compatible model, validates the answer, and returns structured JSON.
+The service receives a question, retrieves semantically relevant context from a knowledge base using embeddings and similarity search, constructs controlled LLM context, generates an answer, validates the response, and returns structured output.
 
-**Highlights**
+**Pipeline**
 
-- Clear separation of retrieval, generation, and validation
-- Embeddings-based semantic search
-- Controlled prompt construction
-- Response validation before returning output
-- Simple, maintainable FastAPI architecture
+`Request → Retrieval → Context Selection → Prompt Construction → LLM → Validation → Structured Response`
 
-**Stack:** Python, FastAPI, Pydantic, OpenAI-compatible API, embeddings, cosine similarity
+**Engineering highlights**
+
+- Retrieval-augmented generation pipeline
+- Embeddings-based semantic retrieval
+- Cosine similarity search
+- Explicit separation of retrieval and generation
+- Controlled context selection
+- Structured response validation
+- Maintainable FastAPI service architecture
+
+**Stack:** Python, FastAPI, Pydantic, OpenAI-compatible API, embeddings, semantic search, cosine similarity
 
 **Repository:** [github.com/Sviatana/ContextFlow](https://github.com/Sviatana/ContextFlow)
 
@@ -94,17 +127,21 @@ The service accepts a user question, retrieves relevant context from an in-memor
 
 ### Anima
 
-Production-style FastAPI backend template for API-driven services, AI assistants, and voice-enabled systems.
+Production-oriented FastAPI backend architecture for API-driven applications, AI services, and automation systems.
 
-The repository demonstrates modular backend architecture, asynchronous request handling, PostgreSQL integration, environment-based configuration, CI, and deployment-ready setup.
+The project demonstrates a modular backend structure with asynchronous request handling, persistent storage, configuration management, CI, and deployment infrastructure.
 
-**Highlights**
+**Engineering highlights**
 
-- Separation of API, core logic, and database layers
-- Async request handling
-- PostgreSQL schema and migration structure
-- Docker and Railway deployment setup
+- Modular FastAPI architecture
+- Async request processing
+- PostgreSQL persistence
+- SQLAlchemy data layer
+- Environment-based configuration
+- Database migration structure
+- Docker deployment
 - GitHub Actions CI
+- Railway deployment configuration
 
 **Stack:** Python, FastAPI, AsyncIO, PostgreSQL, SQLAlchemy, Docker, Railway, GitHub Actions
 
@@ -112,31 +149,118 @@ The repository demonstrates modular backend architecture, asynchronous request h
 
 ---
 
-## Additional Experience
+## Current Engineering Focus
 
-- AI assistants and business automation
-- Telegram products and Mini Apps
-- External API integrations
-- Background processing
-- File parsing and data validation
-- Production logs and root-cause debugging
-- Browser automation with Selenium and undetected-chromedriver
+My current engineering work includes:
+
+- production Python backend development
+- LLM-powered applications
+- RAG and retrieval pipelines
+- embeddings and vector search
+- PostgreSQL and pgvector
+- Redis-backed application components
+- structured and validated LLM outputs
+- asynchronous API integrations
+- background processing
+- context-aware AI workflows
+- production debugging and root-cause analysis
+- Docker-based deployments
+
+I am particularly interested in building AI systems where LLM generation is only one component of a controlled application pipeline rather than an isolated prompt call.
 
 ---
 
-## How I Work
+## Engineering Approach
 
-- Design systems with clear component boundaries
-- Keep AI outputs controlled and validated
-- Prefer root-cause analysis over one-off fixes
-- Treat deployment and maintainability as part of development
-- Use AI-assisted development tools while retaining responsibility for architecture, review, testing, and final code quality
+### Controlled AI outputs
+
+LLM responses are treated as untrusted application input.
+
+Where AI output participates in business logic, I prefer explicit schemas, validation, bounded retries, repair/fallback paths, and predictable failure handling.
+
+### Clear architecture
+
+I separate API transport, business logic, AI integrations, retrieval, persistence, and infrastructure concerns instead of placing the complete workflow inside endpoint handlers.
+
+### Async by design
+
+For network-bound applications I use asynchronous request processing and avoid blocking operations in async execution paths.
+
+### Production responsibility
+
+My work does not stop when an endpoint works locally.
+
+I also work with:
+
+- configuration and secrets
+- database migrations
+- Docker environments
+- application logs
+- health checks
+- production debugging
+- deployment verification
+- regression testing
+
+### Root-cause debugging
+
+I prefer identifying the source of incorrect behavior in data flow, context, routing, validation, or integration boundaries instead of introducing case-specific hardcoded fixes.
+
+---
+
+## Additional Experience
+
+I have also developed and integrated:
+
+- AI assistants
+- Telegram products and Mini Apps
+- business automation systems
+- external API integrations
+- Google API integrations
+- OAuth flows
+- browser automation
+- file processing and parsing
+- data validation pipelines
+- asynchronous background workflows
+- SaaS backend components
+
+---
+
+## What I Build
+
+Typical architecture:
+
+`Client / Bot / Web App`
+
+↓
+
+`FastAPI`
+
+↓
+
+`Application / Domain Logic`
+
+↓
+
+`AI / Retrieval / Integration Services`
+
+↓
+
+`PostgreSQL / pgvector / Redis`
+
+↓
+
+`External APIs / LLM Providers`
+
+The goal is not simply to connect an application to an LLM API, but to build a backend around the model that controls context, data, validation, persistence, errors, and system behavior.
 
 ---
 
 ## Contacts
 
-- **Email:** ssidaren@gmail.com
-- **Website:** [ai24solutions.ru](https://ai24solutions.ru)
-- **LinkedIn:** [linkedin.com/in/sviatanasidarenka](https://www.linkedin.com/in/sviatanasidarenka/)
-- **Telegram:** [t.me/sidarenkas](https://t.me/sidarenkas)
+**Email:** ssidaren@gmail.com
+
+**Website:** [ai24solutions.ru](https://ai24solutions.ru)
+
+**LinkedIn:** [linkedin.com/in/sviatanasidarenka](https://www.linkedin.com/in/sviatanasidarenka/)
+
+**Telegram:** [t.me/sidarenkas](https://t.me/sidarenkas)
